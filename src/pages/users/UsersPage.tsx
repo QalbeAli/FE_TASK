@@ -344,39 +344,116 @@ export const UsersPage: React.FC = () => {
         <div className="ag-theme-alpine" style={{ height: 600, width: "100%" }}>
           <style>
             {`
-              .ag-theme-alpine .ag-header-cell.actions-header {
-                text-align: center !important;
-                font-weight: 600;
+              /* Light theme styles */
+              .ant-theme-light .ag-theme-alpine .ag-header-cell {
+                background-color: #fafafa !important;
+                border-bottom: 2px solid #e8e8e8 !important;
+                font-weight: 600 !important;
+                color: #262626 !important;
               }
               
-              .ag-theme-alpine .ag-cell.actions-cell {
+              .ant-theme-light .ag-theme-alpine .ag-header-cell.actions-header {
+                text-align: center !important;
+                font-weight: 600;
+                color: #262626 !important;
+              }
+              
+              .ant-theme-light .ag-theme-alpine .ag-cell.actions-cell {
                 display: flex !important;
                 align-items: center !important;
                 justify-content: center !important;
                 padding: 8px 0 !important;
               }
               
-              .ag-theme-alpine .ag-header-cell {
-                background-color: #fafafa !important;
-                border-bottom: 2px solid #e8e8e8 !important;
-                font-weight: 600 !important;
-              }
-              
-              .ag-theme-alpine .ag-row {
+              .ant-theme-light .ag-theme-alpine .ag-row {
                 border-bottom: 1px solid #f0f0f0 !important;
               }
               
-              .ag-theme-alpine .ag-row:hover {
+              .ant-theme-light .ag-theme-alpine .ag-row:hover {
                 background-color: #f5f5f5 !important;
               }
               
-              .ag-theme-alpine .ag-cell {
+              .ant-theme-light .ag-theme-alpine .ag-cell {
                 border-right: 1px solid #f0f0f0 !important;
                 padding: 8px 12px !important;
               }
               
-              .ag-theme-alpine .ag-cell:last-child {
+              .ant-theme-light .ag-theme-alpine .ag-cell:last-child {
                 border-right: none !important;
+              }
+              
+              /* Dark theme styles */
+              .ant-theme-dark .ag-theme-alpine .ag-header-cell {
+                background-color: #262626 !important;
+                border-bottom: 2px solid #434343 !important;
+                font-weight: 600 !important;
+                color: #ffffff !important;
+              }
+              
+              .ant-theme-dark .ag-theme-alpine .ag-header-cell.actions-header {
+                text-align: center !important;
+                font-weight: 600;
+                color: #ffffff !important;
+              }
+              
+              .ant-theme-dark .ag-theme-alpine .ag-cell.actions-cell {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                padding: 8px 0 !important;
+              }
+              
+              .ant-theme-dark .ag-theme-alpine .ag-row {
+                border-bottom: 1px solid #303030 !important;
+              }
+              
+              .ant-theme-dark .ag-theme-alpine .ag-row:hover {
+                background-color: #1f1f1f !important;
+              }
+              
+              .ant-theme-dark .ag-theme-alpine .ag-cell {
+                border-right: 1px solid #303030 !important;
+                padding: 8px 12px !important;
+                color: #ffffff !important;
+              }
+              
+              .ant-theme-dark .ag-theme-alpine .ag-cell:last-child {
+                border-right: none !important;
+              }
+              
+              /* Theme switcher visibility fixes */
+              .ant-theme-light .ant-btn-text {
+                color: #262626 !important;
+              }
+              
+              .ant-theme-light .ant-btn-text:hover {
+                color: #1890ff !important;
+                background-color: #f0f8ff !important;
+              }
+              
+              .ant-theme-light .ant-btn-text .anticon {
+                color: #262626 !important;
+              }
+              
+              .ant-theme-light .ant-btn-text:hover .anticon {
+                color: #1890ff !important;
+              }
+              
+              .ant-theme-dark .ant-btn-text {
+                color: #ffffff !important;
+              }
+              
+              .ant-theme-dark .ant-btn-text:hover {
+                color: #1890ff !important;
+                background-color: #1f1f1f !important;
+              }
+              
+              .ant-theme-dark .ant-btn-text .anticon {
+                color: #ffffff !important;
+              }
+              
+              .ant-theme-dark .ant-btn-text:hover .anticon {
+                color: #1890ff !important;
               }
             `}
           </style>

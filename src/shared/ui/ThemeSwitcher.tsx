@@ -26,11 +26,11 @@ export const ThemeSwitcher: React.FC = () => {
   const getThemeIcon = () => {
     switch (theme) {
       case "light":
-        return <SunOutlined />;
+        return <SunOutlined style={{ color: "white" }} />;
       case "dark":
-        return <MoonOutlined />;
+        return <MoonOutlined style={{ color: "white" }} />;
       default:
-        return <BulbOutlined />;
+        return <BulbOutlined style={{ color: "white" }} />;
     }
   };
 
@@ -52,6 +52,9 @@ export const ThemeSwitcher: React.FC = () => {
           type="text"
           size="small"
           title="Select theme"
+          style={{
+            color: "white",
+          }}
         >
           Theme
         </Button>
