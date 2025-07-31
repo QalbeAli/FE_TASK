@@ -156,8 +156,8 @@ export const UsersPage: React.FC = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "0 4px",
-        marginRight: 0,
+        padding: "0 8px",
+        width: "100%",
       }}>
         <ActionCell
           onEdit={() => handleEditUser(user)}
